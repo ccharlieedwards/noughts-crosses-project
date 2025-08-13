@@ -16,35 +16,690 @@
     justify-content: center;
 }
 
-.btn{
-    padding: 10px 20px;
+.DrawMessage{
+    position: absolute;
+    visibility: hidden;
     background: #e7fff5;
+    border: 20px solid #1c362c;
+    outline: none;
+    cursor: pointer;
+    font-size: 60px;
+    font-weight: 1000;
+    transition: transform 0.2s;
+    z-index: 4;
+}
+
+.WinMessageCross{
+    position: absolute;
+    visibility: hidden;
+    background: #e7fff5;
+    border: 20px solid #1c362c;
+    outline: none;
+    cursor: pointer;
+    font-size: 60px;
+    font-weight: 1000;
+    transition: transform 0.2s;
+    z-index: 4;
+}
+
+.WinMessageCircle{
+    visibility: hidden;
+    position: absolute;
+    background: #e7fff5;
+    border: 20px solid #1c362c;
+    outline: none;
+    cursor: pointer;
+    font-size: 60px;
+    font-weight: 1000;
+    transition: transform 0.2s;
+    z-index: 4;
+}
+
+.CircleTL{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CrossTL{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CircleTM{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CrossTM{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CircleTR{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CrossTR{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CircleML{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CrossML{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CircleMM{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CrossMM{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CircleMR{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CrossMR{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CircleBL{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CrossBL{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CircleBM{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CrossBM{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CircleBR{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.CrossBR{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    position: absolute;
+    outline: none;
+    top: 0%;
+    left: 50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.ButtonTL{
+    padding: none;
+    position: absolute;
+    background: #0905dc00;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    border: none;
+    box-shadow: none;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transition: none;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.ButtonTM{
+    padding: 0;
+    opacity: 0;
+    background: #0905dc00;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
     border: 0;
     outline: none;
     cursor: pointer;
-    font-size: 32px;
-    font-weight: 1000;
-    border-radius: 5px;
-    transition: transform 0.2s;
+    width: 60px;
+    height: 60px;
+    transition: none;
+    visibility: hidden;
+    z-index: 2;
 }
 
-.btn:active{
-    transform: scale(0.95);
-}
-
-.popup{
-    width: 400px;
-    background: #fff;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+.ButtonTR{
+    padding: 0;
+    opacity: 0;
+    background: #05dc6200;
     position: absolute;
-    top: 0;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transition: none;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.ButtonML{
+    padding: 0;
+    opacity: 0;
+    background: #d5dc0500;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transition: none;
+    visibility: hidden;
+    z-index: 2;
+}
+
+
+.ButtonMM{
+    padding: 0;
+    opacity: 0;
+    background: #05dcd100;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transition: none;
+    visibility: hidden;
+    z-index: 2;
+}
+
+
+.ButtonMR{
+    padding: 0;
+    opacity: 0;
+    background: #4a242400;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transition: none;
+    visibility: hidden;
+    z-index: 2;
+}
+
+
+.ButtonBL{
+    padding: 0;
+    opacity: 0;
+    background: #dc05b800;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transition: none;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.ButtonBM{
+    padding: 0;
+    opacity: 0;
+    background: #dca60500;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transition: none;
+    visibility: hidden;
+    z-index: 2;
+}
+
+
+.ButtonBR{
+    padding: 0;
+    opacity: 0;
+    background: #b505dc00;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transition: none;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.btn{
+    transition: opacity 500ms ease-in-out;
+}
+
+.close-start-game{
+    visibility: hidden; 
+    opacity: 0;
+}
+
+.WhiteBackgroundBox{
+    width: 400px;
+    height: 240px;
+    background: #ffffff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
-    padding: 0 30px 60px;
+    padding: 0;
     color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 0; 
+}
+
+.popupTL{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1; 
+}
+
+.popupTM{
+    width: 60px;
+    height: 60px;
+    background: #ffffff00;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1; 
+}
+
+.popupTR{
+    width: 60px;
+    height: 60px;
+    background: #ffffff00;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1; 
+}
+
+.popupML{
+    width: 60px;
+    height: 60px;
+    background: #ffffff00;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1; 
+}
+
+.popupMM{
+    width: 60px;
+    height: 60px;
+    background: #ffffff00;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1; 
+}
+
+.popupMR{
+    width: 60px;
+    height: 60px;
+    background: #ffffff00;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1; 
+}
+
+.popupBL{
+    width: 60px;
+    height: 60px;
+    background: #ffffff00;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1; 
+}
+
+.popupBM{
+    width: 60px;
+    height: 60px;
+    background: #ffffff00;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1; 
+}
+
+.popupBR{
+    width: 60px;
+    height: 60px;
+    background: #ffffff00;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1; 
+}
+
+.open-win-message{
+    visibility: visible;
+    top: 50%;
+    transform: translate(0px, -100px);
+    z-index: 4;
+}
+
+.CrossesTurn{
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    top: 0%;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.CirclesTurn{
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    top: 0%;
+    left: 50%;
+    text-align: center;
+    position: absolute;
     visibility: hidden;
     transition: all 0.4s ease-in-out;
 }
@@ -55,26 +710,244 @@
     transform: translate(-50%, -50%) scale(1);
 }
 
-.popup img{
-    width: 100px;
+.CrossesTurn{
+    transform: translate(-130px, -180px);
+}
+
+.CirclesTurn{
+    transform: translate(-130px, -180px);
+}
+
+.MarkSquare-TL{
+    visibility: visible;
+    top: 50%;
+}
+
+.MarkSquare-TM{
+    visibility: visible;
+    top: 50%;
+}
+
+.MarkSquare-TR{
+    visibility: visible;
+    top: 50%;
+}
+
+.MarkSquare-ML{
+    visibility: visible;
+    top: 50%;
+}
+
+.MarkSquare-MM{
+    visibility: visible;
+    top: 50%;
+}
+
+.MarkSquare-MR{
+    visibility: visible;
+    top: 50%;
+}
+
+.MarkSquare-BL{
+    visibility: visible;
+    top: 50%;
+}
+
+.MarkSquare-BM{
+    visibility: visible;
+    top: 50%;
+}
+
+.MarkSquare-BR{
+    visibility: visible;
+    top: 50%;
+}
+
+.CircleTL{
+    width: 60px;
+    transform: scale(0.055) translate(-2130px, -2130px);
+}
+
+.CrossTL{
+    width: 60px;
+    transform: scale(0.06) translate(-1900px, -1900px);
+}
+
+.CircleTM{
+    width: 60px;
+    transform: scale(0.055) translate(-1030px, -2130px);
+}
+
+.CrossTM{
+    width: 60px;
+    transform: scale(0.06) translate(-910px, -1900px);
+}
+
+.CircleTR{
+    width: 60px;
+    transform: scale(0.055) translate(60px, -2130px);
+}
+
+.CrossTR{
+    width: 60px;
+    transform: scale(0.06) translate(90px, -1900px);
+}
+
+.CircleML{
+    width: 60px;
+    transform: scale(0.055) translate(-2130px, -1030px);
+}
+
+.CrossML{
+    width: 60px;
+    transform: scale(0.06) translate(-1900px, -910px);
+}
+
+.CircleMM{
+    width: 60px;
+    transform: scale(0.055) translate(-1030px, -1030px);
+}
+
+.CrossMM{
+    width: 60px;
+    transform: scale(0.06) translate(-910px, -910px);
+}
+
+.CircleMR{
+    width: 60px;
+    transform: scale(0.055) translate(60px, -1030px);
+}
+
+.CrossMR{
+    width: 60px;
+    transform: scale(0.06) translate(90px, -910px);
+}
+
+.CircleBL{
+    width: 60px;
+    transform: scale(0.055) translate(-2130px, 60px);
+}
+
+.CrossBL{
+    width: 60px;
+    transform: scale(0.06) translate(-1900px, 90px);
+}
+
+.CircleBM{
+    width: 60px;
+    transform: scale(0.055) translate(-1030px, 60px);
+}
+
+.CrossBM{
+    width: 60px;
+    transform: scale(0.06) translate(-910px, 90px);
+}
+
+.CircleBR{
+    width: 60px;
+    transform: scale(0.055) translate(60px, 60px);
+}
+
+.CrossBR{
+    width: 60px;
+    transform: scale(0.06) translate(90px, 90px);
+}
+
+.ButtonTL{
+    width: 60px;
+    transform: translate(-150%, -150%);
+}
+
+.ButtonTM{
+    width: 60px;
+    transform: translate(-50%, -150%);
+}
+
+.ButtonTR{
+    width: 60px;
+    transform: translate(50%, -150%);
+}
+
+.ButtonML{
+    width: 60px;
+    transform: translate(-150%, -50%);
+}
+
+.ButtonMM{
+    width: 60px;
+    transform: translate(-50%, -50%);
+}
+
+.ButtonMR{
+    width: 60px;
+    transform: translate(50%, -50%);
+}
+
+.ButtonBL{
+    width: 60px;
+    transform: translate(-150%, 50%);
+}
+
+.ButtonBM{
+    width: 60px;
+    transform: translate(-50%, 50%);
+}
+
+.ButtonBR{
+    width: 60px;
+    transform: translate(50%, 50%);
+}
+
+.popupTL img{
+    width: 60px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transform: translate(0%, -100%);
 }
 
-.popup h2{
-    font-size: 38px;
-    font-weight: 500;
-    margin: 30px 0 10px;
+.popupTM img{
+    width: 60px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transform: translate(-100%, -100%);
 }
 
-.popup button{
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
-    background-color: #e02189;
-    color: #fff;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+.popupTR img{
+    width: 60px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transform: translate(100%, -100%);
+}
+
+.popupML img{
+    width: 60px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transform: translate(-100%, 0%);
+}
+
+.popupMM img{
+    width: 60px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transform: translate(0%, 0%);
+}
+
+.popupMR img{
+    width: 60px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transform: translate(100%, 0%);
+}
+
+.popupBL img{
+    width: 60px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transform: translate(-100%, 100%);
+}
+
+.popupBM img{
+    width: 60px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transform: translate(0%, 100%);
+}
+
+.popupBR img{
+    width: 60px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transform: translate(100%, 100%);
 }

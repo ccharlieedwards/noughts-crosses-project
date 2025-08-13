@@ -9,14 +9,143 @@
 <body>
 
 <div class="container">
-    <button type="StartGameButton" class="btn" onclick="openPopup()">Start Game</button>
-    <div class="popup" id="popup">
-        <img src="WhiteSquare.jpg" alt="">
-        <h2>Thank You!</h2>
-        <p>Your Details has been Succesfully Submitted.Thanks!</p>
-        <button type="button" onclick="closePopup()">OK</button>
+    <div class="btn" id="btn">
+        <button type="StartGameButton" onclick="openPopup()">Start Game</button>
+    </div>
+    <div class="popupTL" id="popupTL">
+        <img src="WhiteSquareTL.jpg" alt="">
     </div>  
-
+    <div class="popupTM" id="popupTM">
+        <img src="WhiteSquareTM.jpg" alt="">
+    </div>
+    <div class="popupTR" id="popupTR">
+        <img src="WhiteSquareTR.jpg" alt="">
+    </div>
+    <div class="popupML" id="popupML">
+        <img src="WhiteSquareML.jpg" alt="">
+    </div>
+    <div class="popupMM" id="popupMM">
+        <img src="WhiteSquareMM.jpg" alt="">
+    </div>
+    <div class="popupMR" id="popupMR">
+        <img src="WhiteSquareMR.jpg" alt="">
+    </div>
+    <div class="popupBL" id="popupBL">
+        <img src="WhiteSquareBL.jpg" alt="">
+    </div>
+    <div class="popupBM" id="popupBM">
+        <img src="WhiteSquareBM.jpg" alt="">
+    </div>
+    <div class="popupBR" id="popupBR">
+        <img src="WhiteSquareBR.jpg" alt="">
+    </div>
+    <div class="WhiteBackgroundBox" id="WhiteBackgroundBox">
+    </div>
+    <div class="ButtonTL" id="ButtonTL">
+        <button type="ButtonTL" onclick="MarkSquareTL()"/button>
+    </div>
+    <div class="ButtonTM" id="ButtonTM">
+        <button type="ButtonTM" onclick="MarkSquareTM()"/button>
+    </div>
+    <div class="ButtonTR" id="ButtonTR">
+        <button type="ButtonTR" onclick="MarkSquareTR()"/button>
+    </div>
+    <div class="ButtonML" id="ButtonML">
+        <button type="ButtonML" onclick="MarkSquareML()"/button>
+    </div>
+    <div class="ButtonMM" id="ButtonMM">
+        <button type="ButtonMM" onclick="MarkSquareMM()"/button>
+    </div>
+    <div class="ButtonMR" id="ButtonMR">
+        <button type="ButtonMR" onclick="MarkSquareMR()"/button>
+    </div>
+    <div class="ButtonBL" id="ButtonBL">
+        <button type="ButtonBL" onclick="MarkSquareBL()"/button>
+    </div>
+    <div class="ButtonBM" id="ButtonBM">
+        <button type="ButtonBM" onclick="MarkSquareBM()"/button>
+    </div>
+    <div class="ButtonBR" id="ButtonBR">
+        <button type="ButtonBR" onclick="MarkSquareBR()"/button>
+    </div>
+    <div class="CrossTL" id="CrossTL">
+        <img src="Cross.png" alt="">
+    </div>
+    <div class="CircleTL" id="CircleTL">
+        <img src="Circle.png" alt="">
+    </div>
+    <div class="CrossTM" id="CrossTM">
+        <img src="Cross.png" alt="">
+    </div>
+    <div class="CircleTM" id="CircleTM">
+        <img src="Circle.png" alt="">
+    </div>
+    <div class="CrossTR" id="CrossTR">
+        <img src="Cross.png" alt="">
+    </div>
+    <div class="CircleTR" id="CircleTR">
+        <img src="Circle.png" alt="">
+    </div>
+    <div class="CrossML" id="CrossML">
+        <img src="Cross.png" alt="">
+    </div>
+    <div class="CircleML" id="CircleML">
+        <img src="Circle.png" alt="">
+    </div>
+    <div class="CrossMM" id="CrossMM">
+        <img src="Cross.png" alt="">
+    </div>
+    <div class="CircleMM" id="CircleMM">
+        <img src="Circle.png" alt="">
+    </div>
+    <div class="CrossMR" id="CrossMR">
+        <img src="Cross.png" alt="">
+    </div>
+    <div class="CircleMR" id="CircleMR">
+        <img src="Circle.png" alt="">
+    </div>
+    <div class="CrossBL" id="CrossBL">
+        <img src="Cross.png" alt="">
+    </div>
+    <div class="CircleBL" id="CircleBL">
+        <img src="Circle.png" alt="">
+    </div>
+    <div class="CrossBM" id="CrossBM">
+        <img src="Cross.png" alt="">
+    </div>
+    <div class="CircleBM" id="CircleBM">
+        <img src="Circle.png" alt="">
+    </div>
+    <div class="CrossBR" id="CrossBR">
+        <img src="Cross.png" alt="">
+    </div>
+    <div class="CircleBR" id="CircleBR">
+        <img src="Circle.png" alt="">
+    </div>
+   <div class="WinMessageCross" id="WinMessageCross">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <p>The Crosses Win!</p>
+        <button type="button" onclick="ClosePopupCross()">Close Game</button>
+    </div>
+</div>
+    <div class="WinMessageCircle" id="WinMessageCircle">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <p>The Circles Win!</p>
+        <button type="button" onclick="ClosePopupCircle()">Close Game</button>
+    </div>
+</div>
+    <div class="DrawMessage" id="DrawMessage">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <p>It's a Draw!</p>
+        <button type="button" onclick="ClosePopupDraw()">Close Game</button>
+    </div>
+</div>
+    <div class="CrossesTurn" id="CrossesTurn">
+        <p>It's the Crosses' turn!</p>
+    </div>
+    <div class="CirclesTurn" id="CirclesTurn">
+        <p>It's the Circles' turn!</p>
+    </div>
 </div>
 
 </body>
