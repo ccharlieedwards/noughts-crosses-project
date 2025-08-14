@@ -1,0 +1,20 @@
+{
+  "name": "noughts-crosses-project",
+  "version": "1.0.0",
+  "description": "A tic-tac-toe game built with HTML, CSS and JavaScript",
+  "homepage": "https://github.com/ccharlieedwards/noughts-crosses-project#readme",
+  "bugs": {
+    "url": "https://github.com/ccharlieedwards/noughts-crosses-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccharlieedwards/noughts-crosses-project.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  }
+}
